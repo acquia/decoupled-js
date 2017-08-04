@@ -1,0 +1,10 @@
+<div class="node-display">
+    {{#if model.field_picture.filename}}
+    <div class="img-max">
+        <img src="{{ model.field_picture.absoluteUrl }}" />
+    </div>
+    {{/if}}
+    <h2>{{model.title}}</h2>
+    <div class="body-val">{{{ model.body.value }}}</div>
+    <div class="size-val"> size: {{model.field_size}}</div>
+</div>

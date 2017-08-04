@@ -1,0 +1,10 @@
+{{outlet}}
+
+<h3>{{model.name}}</h3>
+Description: <p>{{model.description.value}}</p>
+
+{{!-- @todo - uncomment to render links to tagged Articles
+{{#each model.articles as |article|}}
+  <h4>{{#link-to "article" article}}{{article.title}}{{/link-to}}</h4>
+{{/each}}
+--}}

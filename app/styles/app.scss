@@ -1,0 +1,87 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background: #f2f9f9;
+    font-family: 'Open Sans', serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body > .ember-view {
+    padding: 10px;
+}
+
+div.top {
+    background: #000;
+    color: #fff;
+    font-size: 130%;
+    padding: 10px;
+    a {
+      color: #fff;  
+      text-decoration: none;
+    }
+}
+
+.animal-listing {
+    float: left;
+    width: 48%;
+    margin: 1%;
+    display: block;
+    a, a:visited {  color: #6495ed; }
+    .desc p {
+        max-width: 85%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.grouped {
+    border: 1px solid grey;
+    padding: 4px 9px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    &:hover { background: white; }
+}
+
+.node-display {
+    .img-max {
+        margin: 0 20px 3px 0;
+        float: left;
+        display: inline-block;
+    }
+}
+
+.animal-listing {
+    .grouped {
+    border: 1px solid #808080;
+    padding: 4px 9px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+    float: left;
+    display: inline-block;
+    max-width: 95%;
+    .title {
+       font-size: 120%;
+    }
+        span {
+            display: block;
+            clear: both;
+        }
+    }
+    .img-max {
+        margin: 0 5px 3px 0;
+        display: inline-block;
+        float: left;
+        max-width: 80px;
+    }
+    .content {
+        max-width: 75%;
+        margin-left: 5%;
+        float: left;
+        display: inline-block;
+        padding: 25px 0;
+    }
+}

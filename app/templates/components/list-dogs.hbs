@@ -1,0 +1,14 @@
+{{#each obj as |entity|}}
+<div class="grouped">
+  {{#if entity.field_picture.filename}}
+  <div class="img-max">
+    <img src="{{ entity.field_picture.absoluteUrl }}" />
+  </div>
+  {{/if}}
+  <div class="content">
+    <span class="title">{{#link-to "dog" entity.id}}{{entity.title}}{{/link-to}}</span>
+    <span class="desc">{{{ entity.body.value }}} </span>
+    <span class="size"><i>size is</i> {{{ entity.field_size }}} </span>
+  </div>
+</div>
+{{/each}}

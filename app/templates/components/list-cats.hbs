@@ -1,0 +1,14 @@
+{{#each obj as |entity|}}
+<div class="grouped">
+    {{#if entity.field_profile.filename}}
+    <div class="img-max">
+        <img src="{{ entity.field_profile.absoluteUrl }}" />
+    </div>
+    {{/if}}
+    <div class="content">
+        <span class="title">{{#link-to "cat" entity.id}}{{entity.title}}{{/link-to}}</span>
+        <span class="desc">{{{ entity.body.value }}} </span>
+        <span class="hair"> <i>hair is</i>  {{{ entity.field_hair }}} </span>
+    </div>
+</div>
+{{/each}}

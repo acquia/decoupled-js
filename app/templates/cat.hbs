@@ -1,0 +1,10 @@
+<div class="node-display">
+    {{#if model.field_profile.filename}}
+    <div class="img-max">
+        <img src="{{ model.field_profile.absoluteUrl }}" />
+    </div>
+    {{/if}}
+    <h2>{{model.title}}</h2>
+    <div class="body-val">{{{ model.body.value }}}</div>
+    <div class="hair-val"> hair: {{model.field_hair}}</div>
+</div>

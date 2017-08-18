@@ -3,7 +3,7 @@
 
 module.exports = function (environment) {
   let ENV = {
-    modulePrefix: 'js-app',
+    modulePrefix: 'js-client',
     environment,
     rootURL: '/',
     locationType: 'auto',

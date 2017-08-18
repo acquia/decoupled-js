@@ -1,0 +1,22 @@
+{
+  "name": "node-server",
+  "version": "0.0.0",
+  "description": "An example express server for the js-client app",
+  "private": true,
+  "directories": {
+    "doc": "doc",
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "repository": "",
+  "engines": {
+    "node": ">= 7.3.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}

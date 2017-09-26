@@ -8,7 +8,7 @@ module.exports = function (environment) {
     rootURL: '/',
     locationType: 'auto',
     fastboot: {
-      hostWhitelist: ['local.drupaldecoupled.com', /^localhost:\d+$/]
+      hostWhitelist: ['local.drupaldecoupled.com', 'docroot.prod.acquia-sites.com', /^localhost:\d+$/]  
     },
     EmberENV: {
       FEATURES: {
@@ -21,7 +21,7 @@ module.exports = function (environment) {
       }
     },
     APP: {
-      host: 'http://local.drupaldecoupled.com',  // @todo - Fill in your Drupal backend URL
+      host: (process.env.api_endpoint || 'http://local.drupaldecoupled.com'),  // @todo - Fill in your Drupal backend URL
       oauth2TokenEndpoint: '/oauth/token',
       oauth2ClientId: '11111111-2222-3333-4444-555555555555',  // @todo - Fill in your client UUID
       // Here you can pass flags/options to your application instance

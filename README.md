@@ -16,7 +16,7 @@ This repository is constructed for a JavaScript application to demostrate a Deco
 - Fork this repository and download locally with ```git clone [YOUR REPO]```
 - CD into your js app root with ```cd decoupled-js/```
 - You will now install the required node modules with ```npm install```
-- You can serve your JS app with ```npm start``` and test at ```http://localhost:3000``` 
+- You can serve your JS app with ```npm start``` and test at ```http://localhost:8080``` 
 
 
 ### Preview 

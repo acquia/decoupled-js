@@ -10,10 +10,9 @@
   },
   "repository": "",
   "scripts": {
-    "build": "ember build --output-path=dist",
-    "build-dev": "ember build --output-path=dist --watch",
     "test": "ember test",
-    "postinstall": "npm run build"
+    "build": "ember build --output-path=dist",
+    "start": "npm run build"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",

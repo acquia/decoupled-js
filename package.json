@@ -8,9 +8,9 @@
     "test": "tests"
   },
   "scripts": {
-    "prestart": "cd client && npm run start",
     "start": "cd server && npm run start",
-    "start-dev": "./node_modules/concurrently/src/main.js --kill-others \"cd client && npm run start\" \"cd server && npm run start\""
+    "start-dev": "./node_modules/concurrently/src/main.js --kill-others \"cd client && npm run build-dev\" \"cd server && npm run start\"",
+    "postinstall": "cd client && npm install && cd ../server && npm install"
   },
   "repository": "",
   "engines": {

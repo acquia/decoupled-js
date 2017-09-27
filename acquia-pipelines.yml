@@ -9,9 +9,8 @@ events:
           script:
             - nvm install v6.11.2
             - nvm use 6.11.2
-            - cd client && npm install
-            - cd server && npm install
             - npm install
+            - cd client && npm install && cd ../server && npm install
       - upload-artifact:
           script:
             - pipelines-artifact start

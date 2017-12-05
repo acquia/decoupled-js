@@ -21,7 +21,8 @@ module.exports = function (environment) {
       }
     },
     APP: {
-      host: (process.env.api_endpoint || 'http://docroot.prod.acquia-sites.com'),  // @todo - Fill in your Drupal backend URL or local http://local.drupaldecoupled.com
+      // @todo - Fill in your Drupal backend URL, such as http://local.decoupled.com, then re-run `npm install`.
+      host: (process.env.api_endpoint || 'http://docroot.prod.acquia-sites.com'),
       oauth2TokenEndpoint: '/oauth/token',
       oauth2ClientId: '11111111-2222-3333-4444-555555555555',  // @todo - Fill in your client UUID
       // Here you can pass flags/options to your application instance

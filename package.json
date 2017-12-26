@@ -1,6 +1,6 @@
 {
   "name": "js-app",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Small description for js-app goes here",
   "private": true,
   "directories": {
@@ -14,7 +14,7 @@
   },
   "repository": "",
   "engines": {
-    "node": ">= 7.3.0"
+    "node": ">= 6.11.2"
   },
   "author": "",
   "license": "MIT",

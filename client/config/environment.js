@@ -8,25 +8,23 @@ module.exports = function (environment) {
     rootURL: '/',
     locationType: 'auto',
     fastboot: {
-      hostWhitelist: ['local.drupaldecoupled.com', 'docroot.prod.acquia-sites.com', /^localhost:\d+$/]  
+      hostWhitelist: ['local.decoupled.com', 'docroot.prod.acquia-sites.com', /^localhost:\d+$/]
     },
     EmberENV: {
       FEATURES: {
-        // Here you can enable experimental features on an ember canary build
-        // e.g. 'with-controller': true
       },
       EXTEND_PROTOTYPES: {
-        // Prevent Ember Data from overriding Date.parse.
         Date: false
       }
     },
     APP: {
-      // @todo - Fill in your Drupal backend URL, such as http://local.decoupled.com, then re-run `npm install`.
-      host: (process.env.api_endpoint || 'http://docroot.prod.acquia-sites.com'),
+      /**
+       * You can also point to production location 'http://docroot.prod.acquia-sites.com'
+       * then re-run `npm install` after deleting the node_modules folders.
+       */
+      host: (process.env.api_endpoint || 'http://local.decoupled.com'),
       oauth2TokenEndpoint: '/oauth/token',
       oauth2ClientId: '11111111-2222-3333-4444-555555555555',  // @todo - Fill in your client UUID
-      // Here you can pass flags/options to your application instance
-      // when it is created
     }
   };
 
@@ -59,10 +57,6 @@ module.exports = function (environment) {
 
     ENV.APP.rootElement = '#ember-testing';
   }
-
-  // if (environment === 'production') {
-
-  // }
 
   return ENV;
 };

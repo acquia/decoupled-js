@@ -11,13 +11,16 @@ This repository is constructed for a JavaScript application to demostrate a Deco
 - [Ember CLI](https://ember-cli.com/)
 - [PhantomJS](http://phantomjs.org/)
 
-### Installation & setup 
+### Quick installation & setup 
 
 - Fork this repository and download locally with ```git clone [YOUR REPO]```
 - CD into your js app root with ```cd decoupled-js/```
 - You will now install the required node modules with ```npm install```
 - You can serve your JS app with ```npm start``` and test at ```http://localhost:8080``` 
 
+### Additional setup and local development
+
+– To develop with this application locally, you should address the `@todo` comments in `client/config/environment.js`, such as changing the API endpoint to a local Drupal application. Note that you will need to re-run `npm install` after changing any variables in this file.
 
 ### Preview 
 
